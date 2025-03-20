@@ -4,6 +4,8 @@ import MainDashboard from '../components/MainDashboard';
 import Pagination from '../components/Pagination';
 
 export default function StudentList({ Swal, getSortIndicator, sortBy }) {
+    let [studentList, setstudentList] = useState([])
+
     const [currentPage, setCurrentPage] = useState(1)
     const [postPerPage, setPostPerPage] = useState(5)
 
@@ -11,7 +13,6 @@ export default function StudentList({ Swal, getSortIndicator, sortBy }) {
     const firstPostIndex = lastPostIndex - postPerPage;
     const currentPost = studentList.slice(firstPostIndex, lastPostIndex)
     
-    let [studentList, setstudentList] = useState([])
 
 
     let getAllStudents = () => {

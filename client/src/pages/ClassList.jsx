@@ -4,6 +4,8 @@ import MainDashboard from '../components/MainDashboard'
 import Pagination from '../components/Pagination'
 
 export default function ClassList({ Swal, getSortIndicator, sortBy }) {
+    let [classList, setclassList] = useState([])
+
     const [currentPage, setCurrentPage] = useState(1)
     const [postPerPage, setPostPerPage] = useState(5)
 
@@ -11,7 +13,6 @@ export default function ClassList({ Swal, getSortIndicator, sortBy }) {
     const firstPostIndex = lastPostIndex - postPerPage;
     const currentPost = classList.slice(firstPostIndex, lastPostIndex)
     
-    let [classList, setclassList] = useState([])
 
 
     let getAllClasses = () => {
