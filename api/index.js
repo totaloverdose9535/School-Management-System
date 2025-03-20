@@ -19,7 +19,7 @@ let app = express();
 //cors to connect frontend to backend
 app.use(cors({
     credentials: true,
-    origin: 'http://localhost:5173'
+    origin: 'https://school-management-system-vm3h.onrender.com'
 })
 );
 
