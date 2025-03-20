@@ -22,7 +22,7 @@ import MainDashboard from './components/MainDashboard'
 
 
 
-axios.defaults.baseURL = "http://localhost:8040";
+axios.defaults.baseURL = "https://school-management-system-vm3h.onrender.com";
 axios.defaults.withCredentials = true
 
 
