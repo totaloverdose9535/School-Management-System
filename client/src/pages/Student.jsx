@@ -50,7 +50,7 @@ export default function Student() {
 
   return (
     <>
-      <StudentList Swal={Swal} getSortIndicator={getSortIndicator} sortBy={sortBy} />
+      <StudentList data={studentList} getAllStudents={getAllStudents} Swal={Swal} getSortIndicator={getSortIndicator} sortBy={sortBy} />
     </>
 
   )

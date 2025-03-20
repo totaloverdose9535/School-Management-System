@@ -55,14 +55,11 @@ export default function Class() {
   return (
     <>
       <ClassList
+        data={classList}
+        getAllClasses={getAllClasses}
         Swal={Swal}
         getSortIndicator={getSortIndicator}
         sortBy={sortBy} />
-
-
-
-
-
     </>
   )
 }
